@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hi+Melody&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+html{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+footer{
+  font-size: 0.7rem;
+}
+
+article{
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+  text-align: center;
+  border: 3px solid yellow;
+  background-color: lightgray;
+}
+
+article:first-child{
+  background-color: gray;
+}
+
+article:last-child{
+  background-color: lightyellow;
+}
+
+article > div{
+  width: 250px;
+  border: 2px solid black;
+  padding: 50px 10px;
+  margin: 10px;
+  font-family: "Nanum Pen Script";
+  line-height: 1.6;
+}
+
+div::before{
+  content: '[학교 소개] ';
+  font-weight: bold;
+  color: darkgreen;
+}
+
+div::after{
+  content: ' (생략)';
+  font-style: italic;
+  color: lightgreen;
+}
+
+h3 { 
+  color: hotpink;
+  font-variant: small-caps;
+}
+
+
+h5{
+background-color: gray;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:hover{
+  /*text-decoration: underline;*/
+  background-color: blue;
+  color: white;
+}
+
+a:active{
+  background-color: hotpink;
+  color:white;
+}
+
+a:visited{
+  color: orange;
+}
+
+div#header_title{
+  display:block;
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: "Black Han Sans";
+  font-size: 3rem;
+}
